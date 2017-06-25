@@ -58,9 +58,9 @@
 		},
 
 		next: function () {
-			if (this.showPane(current_pane - 1) <1 ) {
-				window.location = "https://www.messenger.com/closeWindow/?image_url=IMAGE_URL&display_text='thankyou!'";
-			}
+			//if (this.showPane(current_pane - 1) <0 ) {
+			//	window.location = "https://www.messenger.com/closeWindow/?image_url=IMAGE_URL&display_text='thankyou!'";
+			//}
 			return this.showPane(current_pane - 1);
 		},
 
