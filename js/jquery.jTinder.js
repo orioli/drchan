@@ -60,6 +60,7 @@
 		next: function () {
 			if ((current_pane - 1) <0 ) {
 				MessengerExtensions.requestCloseBrowser(function success() { }, function error(err) {});
+				return;
       		}
 			return this.showPane(current_pane - 1);
 		},
