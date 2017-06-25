@@ -59,8 +59,8 @@
 
 		next: function () {
 			if ((current_pane - 1) <0 ) {
-				window.location = "https://www.messenger.com/closeWindow/?display_text='thankyou!'";
-			}
+				MessengerExtensions.requestCloseBrowser(function success() { }, function error(err) {});
+      		}
 			return this.showPane(current_pane - 1);
 		},
 
