@@ -4,5 +4,5 @@
 
 $now = new DateTime();
 $text = array('text' => $now->format('Y-m-d H:i:s'));
-echo json_encode($text, JSON_FORCE_OBJECT);
+echo '{"messages":[ {"text":'.$text .'}]}'
 ?>
