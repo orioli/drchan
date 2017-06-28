@@ -7,7 +7,7 @@ $html = file_get_html('http://www.caltrain.com/schedules/realtime/stations/22nds
 
 //$ret = $html->find('div[class=ipf-st-ip-trains-subtable-td-arrivaltime]');
 
-$ret = $html->find('div.ipf-st-ip-trains-subtable-td-arrivaltime',0)->children(1)->outertext; 
+$ret = $html->find(td.ipf-st-ip-trains-subtable-td-arrivaltime',0)->children(1)->outertext; 
 // Find all images
 foreach($ret as $element)
        echo $element . '<br>';
